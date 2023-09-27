@@ -1,0 +1,89 @@
+:root {
+    --topBarHeight: 50px;
+    /* color theme */
+    --color1:#151E3F;
+    --color2:#030027;
+    --color3:#F2F3D9;
+    --color4:#DC9E82;
+    --color5:#C16E70;
+}
+
+@font-face {
+    font-family: titleCoolFont;
+    src: url(/fonts/ApesTitle-11D0.ttf);;
+}
+@font-face {
+    font-family: liga;
+    src: url(/fonts/LigaJetBrainsMonoNerdFont-Regular.ttf);;
+}
+ 
+/* page setup ======================================== */
+* {
+    font-family: liga;
+    padding: 0;
+    margin: 0;
+}
+body {
+    color: var(--color3);
+    background-image: url(/images/backgroundNightCity.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(1px);
+    top: 0;
+    left: 0;
+}
+
+/* topbar styles =============================== */
+
+header {
+    position:fixed;
+    top: 0;
+    left: 0;
+    height: var(--topBarHeight);
+    width: 100%;
+    padding: 20px,100px;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+.navBar button {
+    color: var(--color3);
+    font-size: 20;
+    background-color: transparent;
+    width: 100;
+    height: var(--topBarHeight);
+    text-align: center;
+    border: none;
+}
+
+
+
+
+
+
+
+
+/* main ======================================== */
+
+.main {
+    margin-left: 0;
+    left: 0;
+    width: 100%;
+}
+
+.main a {
+    color: #F2F3D9;
+}
+
+#titleText {
+    text-align: center;
+    font-family: titleCoolFont;
+    font-size: 40;
+}
+
+/* title ======================================= */
+.title {
+    overflow: hidden;
+    width: 100%;
+}
