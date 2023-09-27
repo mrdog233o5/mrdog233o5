@@ -1,5 +1,5 @@
 :root {
-    --topBarHeight: 50px;
+    --topBarHeight: 10%;
     /* color theme */
     --color1:#151E3F;
     --color2:#030027;
@@ -41,18 +41,18 @@ header {
     position:fixed;
     top: 0;
     left: 0;
-    height: var(--topBarHeight);
+    height: 10%;
     width: 100%;
     justify-content: space-between;
     align-items:center;
 }
 
 .navBar a {
-    font-size: 20px;
+    font-size: 130%;
     text-align: center;
     padding: 10px 16px;
     text-decoration: none;
-    height: var(--topBarHeight);
+    height: 50%;
 }
 
 .navBar #left a {float: left;}
