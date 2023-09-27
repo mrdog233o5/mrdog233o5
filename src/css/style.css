@@ -14,10 +14,11 @@
 }
 @font-face {
     font-family: liga;
-    src: url(/fonts/LigaJetBrainsMonoNerdFont-Regular.ttf);;
+    src: url(/fonts/LigaJetBrainsMonoNerdFont-Regular.ttf);
 }
  
 /* page setup ======================================== */
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -25,6 +26,7 @@
     font-family: liga;
     color: var(--color3);
 }
+
 body {
     background-image: url(/images/backgroundNightCity.jpg);
     background-position: center;
@@ -47,17 +49,33 @@ header {
 }
 
 .navBar a {
-    font-size: 5mm;
+    position: relative;
+    font-size: 1.1em;
     text-transform: capitalize;
     text-align: center;
     text-decoration: none;
-    padding: 3mm 5mm;
+    margin-left: 5mm;
+    margin-right: 5mm;
+    padding-top: 3mm;
+    padding-bottom: 3mm;
 }
 
 .navBar #left a {float: left;}
 .navBar #right a {float: right;}
 
-.navBar a:hover {
-    background-color: var(--color4);
-    color: var(--color2);
+.navBar a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1mm;
+    background: var(--color3);
+    border-radius: 1mm;
+    transform: scaleX(0);
+    transition: transform 0.3s;
+}
+
+.navBar a:hover::after {
+    transform: scaleX(1);
 }
