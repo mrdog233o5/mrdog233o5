@@ -9,15 +9,19 @@
 }
 
 @font-face {
-    font-family: titleCoolFont;
-    src: url(/fonts/ApesTitle-11D0.ttf);;
+    font-family: hacked;
+    src: url(/fonts/Hacked-KerX.ttf);;
+}
+@font-face {
+    font-family: smooth;
+    src: url(/fonts/SmoothElegantRegular-ZLv3.ttf);;
 }
 @font-face {
     font-family: liga;
     src: url(/fonts/LigaJetBrainsMonoNerdFont-Regular.ttf);
 }
  
-/* page setup ======================================== */
+/* page setup ============================================= */
 
 * {
     box-sizing: border-box;
@@ -32,12 +36,11 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    backdrop-filter: blur(1px);
     top: 0;
     left: 0;
 }
 
-/* topbar styles =============================== */
+/* topbar styles ========================================== */
 
 header {
     position:fixed;
@@ -78,4 +81,35 @@ header {
 
 .navBar a:hover::after {
     transform: scaleX(1);
+}
+
+/* main info window ======================================= */
+
+.window {
+    position: relative;
+    top: 15%;
+    left: 15%;
+    width: 70%;
+    height: 70%;
+    background: transparent;
+    border: 1px solid rgba(255,255,255, .5);
+    border-radius: 2mm;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10mm rgba(0,0,0,.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.window #placeholder {
+    width: 100%;
+    text-align: center;
+}
+
+/* others ================================================= */
+
+#title {
+    font-family: smooth;
+    font-size: 500%;
+    margin-top: 4mm;
+    margin-bottom: 8mm;
 }
