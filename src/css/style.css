@@ -48,9 +48,10 @@ header {
 
 .navBar a {
     font-size: 5mm;
+    text-transform: capitalize;
     text-align: center;
-    padding: 3mm 5mm;
     text-decoration: none;
+    padding: 3mm 5mm;
 }
 
 .navBar #left a {float: left;}
