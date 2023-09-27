@@ -19,12 +19,13 @@
  
 /* page setup ======================================== */
 * {
-    font-family: liga;
+    box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-family: liga;
+    color: var(--color3);
 }
 body {
-    color: var(--color3);
     background-image: url(/images/backgroundNightCity.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -42,48 +43,22 @@ header {
     left: 0;
     height: var(--topBarHeight);
     width: 100%;
-    padding: 20px,100px;
-    display: flex;
     justify-content: space-between;
     align-items:center;
 }
-.navBar button {
-    color: var(--color3);
-    font-size: 20;
-    background-color: transparent;
-    width: 100;
+
+.navBar a {
+    font-size: 20px;
+    text-align: center;
+    padding: 10px 16px;
+    text-decoration: none;
     height: var(--topBarHeight);
-    text-align: center;
-    border: none;
 }
 
+.navBar #left a {float: left;}
+.navBar #right a {float: right;}
 
-
-
-
-
-
-
-/* main ======================================== */
-
-.main {
-    margin-left: 0;
-    left: 0;
-    width: 100%;
-}
-
-.main a {
-    color: #F2F3D9;
-}
-
-#titleText {
-    text-align: center;
-    font-family: titleCoolFont;
-    font-size: 40;
-}
-
-/* title ======================================= */
-.title {
-    overflow: hidden;
-    width: 100%;
+.navBar a:hover {
+    background-color: var(--color4);
+    color: var(--color2);
 }
