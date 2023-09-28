@@ -11,28 +11,39 @@
         <!-- header -->
         <header>
             <nav class="navBar">
-                <div id="left">
-                    <a href="/" id="btnHome">home</a>
+                <div class="left">
+                    <a id="btnHome" href="/" class="active">home<span></span></span></a>
                 </div>
-                <div id="right">
-                    <a href="/" id="btnLogin">login</a>
-                    <a href="/" id="btnContact">contact</a>
+                <div class="right">
+                    <a href="/" id="btnLogin">login<span></span>
+                    </a>
+                    <a href="/" id="btnPrograms">programs<span></span>
+                    </a>
+                    <a href="/" id="btnContact">contact<span></span>
+                    </a>
                 </div>
             </nav> 
         </header>
 
         <!-- index page -->
-        <div class="indexPage">
+        <section class="indexPage">
             <div class="window">
-                <div class="placeholder">
-                    <h1 id="title">mrdog233o5</h1>
+                <div class="placeholder" id="infos">
+                    <div class="text">
+                        <h2>Hello! I am</h2>
+                        <object id="br"></object>
+                        <h1 id="title">mrdog233o5</h1>
+                        <object id="br"></object>
+                        <h2>or William</h2>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div class="projects">
-            <h1>Here are all my projects</h1>
-        </div>
-        <script src="js/script.js"></script>
+        <section class="programs">
+            <h1 style="display: block; height: 800;">Projects</h1>
+        </section>
+
+        <script src="/src/js/index.js"></script>
     </body>
 </html>

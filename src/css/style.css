@@ -51,11 +51,12 @@ header {
     align-items:center;
     background: color(0, 0, 0, .1);
     backdrop-filter: blur(20px);
+    z-index: 1000;
 }
 
 .navBar a {
     position: relative;
-    font-size: 1.5em;
+    font-size: 5mm;
     text-transform: capitalize;
     text-align: center;
     text-decoration: none;
@@ -66,8 +67,8 @@ header {
     color: #fff;
 }
 
-.navBar #left a {float: left;}
-.navBar #right a {float: right;}
+.navBar .left a {float: left;}
+.navBar .right a {float: right;}
 
 .navBar a::after {
     content: '';
@@ -84,4 +85,30 @@ header {
 
 .navBar a:hover::after {
     transform: scaleX(1);
+}
+
+
+.navBar a.active::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1mm;
+    background: var(--color3);
+    border-radius: 1mm;
+    transform: scaleX(1);
+}
+
+/* other ================================================== */
+
+.contents {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+section {
+    position: relative;
 }

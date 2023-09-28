@@ -1,5 +1,6 @@
 /* main info window ======================================= */
 .indexPage {
+    overflow: hidden;
     top: 0;
     left: 0;
     margin: 0;
@@ -11,6 +12,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     color: #fff;
+    z-index: 1;
 }
 
 .window {
@@ -20,10 +22,7 @@
     height: 70%;
     width: 80%;
     background: transparent;
-    border: 1px solid rgba(255,255,255, .5);
-    border-radius: 0.7em;
-    backdrop-filter: blur(20px);
-    box-shadow: 0 0 10mm rgba(0,0,0,.7);
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -32,13 +31,39 @@
 .window .placeholder {
     position: relative;
     width: 100%;
-    max-width: 100%;
+    height: 100%;
+    border: 1px solid rgba(255,255,255, .5);
+    border-radius: 0.7em;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10mm rgba(0,0,0,.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
 }
 
-/* others ================================================= */
+.window .placeholder .text {
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
 
-#title {
+.window .placeholder .text #title {
     font-family: smooth;
     font-size: 15vw;
+}
+
+.window .placeholder .text #br {
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: 5vh;
+}
+
+
+/* others ================================================= */
+
+.programs {
+    background-color: bisque;
+    z-index: 99;
 }
