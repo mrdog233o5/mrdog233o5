@@ -11,7 +11,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    color: #fff;
+    color: #F4E8C1;
     z-index: 1;
 }
 
@@ -22,7 +22,6 @@
     height: 70%;
     width: 80%;
     background: transparent;
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -62,9 +61,15 @@
 }
 
 
-/* others ================================================= */
+/* programs =============================================== */
 
 .programs {
-    background-color: bisque;
-    z-index: 99;
+    text-align: center;
+    background-color: #F4E8C1;
+    color: #331E38;
+}
+
+.programs .programsList {
+    padding: 10vw;
+    line-height: 40px;
 }

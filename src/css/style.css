@@ -1,20 +1,14 @@
 :root {
     --topBarHeight: 10%;
-    /* color theme */
-    --color1:#151E3F;
-    --color2:#030027;
-    --color3:#F2F3D9;
-    --color4:#DC9E82;
-    --color5:#C16E70;
 }
 
 @font-face {
     font-family: hacked;
-    src: url(/fonts/Hacked-KerX.ttf);;
+    src: url(/fonts/Hacked-KerX.ttf);
 }
 @font-face {
     font-family: smooth;
-    src: url(/fonts/SmoothElegantRegular-ZLv3.ttf);;
+    src: url(/fonts/SmoothElegantRegular-ZLv3.ttf);
 }
 @font-face {
     font-family: liga;
@@ -42,20 +36,21 @@ body {
 /* topbar styles ========================================== */
 
 header {
-    color: #fff;
     position:fixed;
     top: 0;
     left: 0;
     width: 100%;
+    height: 3em;
     justify-content: space-between;
     align-items:center;
     background: color(0, 0, 0, .1);
-    backdrop-filter: blur(20px);
     z-index: 1000;
+    background-color: #331E38;
 }
 
 .navBar a {
     position: relative;
+    height: 100%;
     font-size: 5mm;
     text-transform: capitalize;
     text-align: center;
@@ -64,7 +59,7 @@ header {
     margin-right: 5mm;
     padding-top: 3mm;
     padding-bottom: 3mm;
-    color: #fff;
+    color: #F4E8C1;
 }
 
 .navBar .left a {float: left;}
@@ -77,7 +72,7 @@ header {
     bottom: 0;
     width: 100%;
     height: 1mm;
-    background: var(--color3);
+    background: #F4E8C1;
     border-radius: 1mm;
     transform: scaleX(0);
     transition: transform 0.3s;
@@ -95,7 +90,7 @@ header {
     bottom: 0;
     width: 100%;
     height: 1mm;
-    background: var(--color3);
+    background: #F4E8C1;
     border-radius: 1mm;
     transform: scaleX(1);
 }
