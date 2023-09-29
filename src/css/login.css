@@ -87,15 +87,7 @@
     color: #331E38;
 }
 
+#createAccount {
+    color: #F4E8C1;
+}
 /* programs =============================================== */
-
-.programs {
-    text-align: center;
-    background-color: #F4E8C1;
-    color: #331E38;
-}
-
-.programs .programsList {
-    padding: 10vw;
-    line-height: 40px;
-}
