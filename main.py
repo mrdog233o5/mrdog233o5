@@ -2,7 +2,7 @@ from flask import Flask, request
 import requests
 # POST TO SERVER
 payload = {
-    'content':str('cao')
+    'content':str('test')
 }
 
 header = {
