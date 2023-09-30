@@ -6,8 +6,8 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    html = open('/website/index.html', 'r').read()
-    return html
+    html = open('website/index.html', 'r').read()
+    return str(html)
 
 @app.route('/api', methods=['POST'])
 def handle_post_request():
