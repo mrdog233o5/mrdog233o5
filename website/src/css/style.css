@@ -4,19 +4,19 @@
 
 @font-face {
     font-family: hacked;
-    src: url(/fonts/Hacked-KerX.ttf);
+    src: url(/website/fonts/Hacked-KerX.ttf);
 }
 @font-face {
     font-family: smooth;
-    src: url(/fonts/SmoothElegantRegular-ZLv3.ttf);
+    src: url(/website/fonts/SmoothElegantRegular-ZLv3.ttf);
 }
 @font-face {
     font-family: liga;
-    src: url(/fonts/LigaJetBrainsMonoNerdFont-Regular.ttf);
+    src: url(/website/fonts/LigaJetBrainsMonoNerdFont-Regular.ttf);
 }
 @font-face {
     font-family: big;
-    src: url(/fonts/Big500-8MLOM.ttf);
+    src: url(/website/fonts/Big500-8MLOM.ttf);
 }
  
 /* page setup ============================================= */
