@@ -3,6 +3,8 @@ import requests
 
 app = Flask(__name__)
 
+
+@app.route('/', defaults={'path': ''})
 @app.route('/api', methods=['POST'])
 def handle_post_request():
     try:
