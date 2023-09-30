@@ -3,7 +3,7 @@ import requests
 
 app = Flask(__name__)
 
-@app.route('/api', methods=['POST','GET'])
+@app.route('/api', methods=['POST'])
 def handle_post_request():
     try:
         message = request.get_data().decode('utf-8')
