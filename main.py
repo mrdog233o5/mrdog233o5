@@ -9,7 +9,7 @@ app.config.update(
 
 @app.route('/')
 def index():
-    html = open('website/index.html', 'r').read()
+    html = open('index.html', 'r').read()
     return str(html)
 
 @app.route('/api', methods=['POST'])
