@@ -3,6 +3,9 @@ import requests
 
 app = Flask(__name__)
 
+app.config.update(
+        DEBUG=True
+        )
 
 @app.route('/')
 def index():
@@ -28,3 +31,5 @@ def handle_post_request():
     
     requests.post("https://discord.com/api/v9/channels/1157577267388616725/messages", data=payload, headers=header)
     return message
+
+app.run()
