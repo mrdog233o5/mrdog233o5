@@ -52,6 +52,7 @@
     justify-content: center;
     align-items: center;
     transform: translateZ(-5px) scale(1.5);
+    z-index: 2;
 }
 
 .window .placeholder {
@@ -89,13 +90,9 @@
 
 /* programs =============================================== */
 
-.programs {
+.about {
     text-align: center;
     background-color: #F4E8C1;
     color: #331E38;
-}
-
-.programs .programsList {
-    padding: 10vw;
-    line-height: 40px;
+    padding: 10vh 15vw;
 }
