@@ -4,7 +4,6 @@
     top: 0;
     left: 0;
     overflow-x: hidden;
-    perspective: 10px;
     -ms-overflow-style: none;
     scrollbar-width: none;
 }
@@ -50,6 +49,7 @@
 }
 
 .window .windowWrap {
+    cursor: pointer;
     position: relative;
     width: 100%;
     height: 100%;
@@ -86,6 +86,13 @@
 /* programs =============================================== */
 
 .about {
+    text-align: center;
+    background-color: #F4E8C1;
+    color: #331E38;
+    padding: 10vh 15vw;
+}
+
+.programs {
     text-align: center;
     background-color: #F4E8C1;
     color: #331E38;
