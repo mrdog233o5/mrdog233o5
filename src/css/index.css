@@ -49,7 +49,7 @@
 }
 
 .window .windowWrap {
-    cursor: pointer;
+    cursor: default;
     position: relative;
     width: 100%;
     height: 100%;
@@ -89,12 +89,35 @@
     text-align: center;
     background-color: #F4E8C1;
     color: #331E38;
-    padding: 10vh 15vw;
+    padding: 10vh 10vw;
 }
 
-.programs {
+.menu {
     text-align: center;
     background-color: #F4E8C1;
     color: #331E38;
-    padding: 10vh 15vw;
+    padding: 10vh 10vw;
+}
+
+.menuFlex {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menuFlex a {
+    position: relative;
+    display: flex;
+    border-radius: 0.7em;
+    height: 5cm;
+    width: 27vw;
+    background-color: #353A47;
+    color: #F4E8C1;
+    text-decoration: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0.5em;
+    padding: 0.5em;
 }
