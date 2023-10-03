@@ -18,6 +18,10 @@
     font-family: big;
     src: url(/fonts/Big500-8MLOM.ttf);
 }
+@font-face {
+    font-family: ph;
+    src: url(/fonts/ORIOND.ttf);
+}
  
 /* page setup ============================================= */
 

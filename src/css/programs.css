@@ -1,0 +1,96 @@
+.wrapper {
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.wrapper::-webkit-scrollbar {
+  display: none;
+}
+/* main info window ======================================= */
+.titlePage {
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+
+    color: #F4E8C1;
+    z-index: 1;
+}
+
+.background {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+    background-color: #000;
+}
+
+.window {
+    position: relative;
+    top: -25%;
+    left: -25%;
+    height: 150%;
+    width: 150%;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.window .windowWrap {
+    cursor: default;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 10mm rgba(0,0,0,.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.window .text {
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+.window .text .title {
+    font-size: 15vw;
+}
+
+.window .text .br {
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: 5vh;
+}
+
+.window .text .githubTitle {
+    position: relative;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-family: ph;
+    font-size: 15vw;
+}
+
+
+.window .text .second {
+    position: relative;
+    font-size: 15vw;
+    color: #000;
+    background-color: #FFA31A;
+    border-radius: 3mm;
+    padding: 0.1em 10mm;
+}
