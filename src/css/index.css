@@ -116,6 +116,7 @@
     height: 100%;
     width: 100%;
     backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     background-color: rgba(0, 0, 0, 0.2);
     border-radius: 3mm;
     color: #F4E8C1;
