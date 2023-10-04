@@ -102,7 +102,8 @@
     font-family: ph;
     font-size: 13vw;
     color: #FFF;
-    padding: 10mm;
+    margin-top: 5mm;
+    padding: 3vw;
 }
 
 
@@ -113,4 +114,10 @@
     background-color: #FFA31A;
     border-radius: 3mm;
     padding: 0.1em 10mm;
+}
+
+/* program list ======================================= */
+
+.programsList {
+    background-color: #000;
 }
