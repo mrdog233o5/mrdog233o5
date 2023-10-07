@@ -103,17 +103,21 @@
 
 /* program list ======================================= */
 
+.programs {
+    height: 100%;
+}
+
 .programsList {
     position: relative;
     display: flex;
     background-color: #121212;
     color: #F4E8C1;
     font-size: 10px;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    min-height: 100%;
+    height: 100%;
 }
 
 .programs .title {
@@ -127,19 +131,18 @@
 .programsWrapperOuter {
     position: relative;
     display: flex;
-    width: 100%;
+    width: 40vw;
     height: 30vw;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    margin: 10mm;
+    margin: 5vw;
 }
 
 .programsWrapper {
     position: relative;
     display: flex;
-    width: 50vw;
     height: 100%;
     flex-direction: column;
     justify-content: center;
@@ -164,14 +167,11 @@
 .programsWrapper:after {
     content: '';
     position: absolute;
-    inset: 1vw;
+    inset: 0.5vw;
     background: #121212;
     border-radius: 3mm;
 }
 
-.left {align-items: flex-start;}
-
-.right {align-items: flex-end;}
 
 @keyframes rotate {
     0% {
