@@ -146,6 +146,12 @@ body {
     align-items: center;
     overflow: hidden;
     margin: 5vw;
+    transition: transform 1s;
+    cursor: pointer;
+}
+
+.programsWrapperOuter:hover {
+    transform: scale(1.1);
 }
 
 .programsWrapper {
@@ -162,27 +168,6 @@ body {
     backdrop-filter: blur(200px);
     padding: 7vw;
 }
-/*
-.programsWrapper:before {
-    content: '';
-    position: absolute;
-    align-self: center;
-    width: 15vw;
-    height: 250%;
-    color: #FFF;
-    background: linear-gradient(#00ccff,#d400d4);
-    animation: rotate 6s linear infinite;
-}
-
-.programsWrapper:after {
-    content: '';
-    position: absolute;
-    inset: 0.5vw;
-    background: #121212;
-    border-radius: 3mm;
-}
-*/
-
 
 @keyframes rotate {
     0% {
