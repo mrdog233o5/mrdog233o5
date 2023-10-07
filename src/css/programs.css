@@ -146,8 +146,11 @@ body {
     align-items: center;
     overflow: hidden;
     margin: 5vw;
+    border-radius: 3mm;
     transition: transform 1s;
     cursor: pointer;
+    -webkit-backdrop-filter: blur(200px);
+    backdrop-filter: blur(200px);
 }
 
 .programsWrapperOuter:hover {
@@ -163,9 +166,6 @@ body {
     align-items: center;
     overflow: hidden;
     text-align: center;
-    border-radius: 3mm;
-    -webkit-backdrop-filter: blur(200px);
-    backdrop-filter: blur(200px);
     padding: 7vw;
 }
 
