@@ -26,5 +26,6 @@
     animation: rotate 20s infinite;
     opacity: 0.8;
     filter: blur(7vmax);
+    -webkit-filter: blur(7vmax);
     z-index: 0;
 }
