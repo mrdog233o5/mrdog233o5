@@ -105,6 +105,8 @@
 
 .programs {
     height: 100%;
+    display: flex;
+    flex-direction: row;
 }
 
 .programsList {
@@ -118,7 +120,10 @@
     justify-content: center;
     align-items: center;
     height: 100%;
+    width: 50vw;
 }
+
+
 
 .programs .title {
     font-size: 5vw;
@@ -131,7 +136,7 @@
 .programsWrapperOuter {
     position: relative;
     display: flex;
-    width: 40vw;
+    width: 35vw;
     height: 30vw;
     flex-direction: row;
     justify-content: center;
