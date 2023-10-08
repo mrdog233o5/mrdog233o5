@@ -116,7 +116,6 @@ body {
 .programsList {
     position: relative;
     display: flex;
-    color: #F4E8C1;
     font-size: 10px;
     flex-direction: column;
     flex-wrap: wrap;
@@ -151,6 +150,8 @@ body {
     cursor: pointer;
     -webkit-backdrop-filter: blur(200px);
     backdrop-filter: blur(200px);
+    color: #F4E8C1;
+    text-decoration: none;
 }
 
 .programsWrapperOuter:hover {
