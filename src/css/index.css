@@ -100,14 +100,16 @@
 .menuFlex a {
     overflow: hidden;
     position: relative;
-    height: 14vw;
+    height: 17vh;
     width: 27vw;
     color: #F4E8C1;
     margin: 0.5em;
     border-radius: 3mm;
+    text-align: left;
     text-decoration: none;
     transition: transform 1s;
 }
+
 
 .menuFlex a .text {
     position: relative;
