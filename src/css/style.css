@@ -44,6 +44,7 @@
     padding: 0;
     margin: 0;
     font-family: liga;
+    transition-timing-function: ease;
 }
 
 
@@ -70,7 +71,7 @@ header {
 }
 
 header * {
-    transition: all 0.5s
+    transition: all 0.5s;
 }
 
 .navBar a {
