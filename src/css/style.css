@@ -79,9 +79,11 @@ header {
     align-items:center;
     background: color(0, 0, 0, .1);
     z-index: 1000;
-    background-color: #331E38;
+    background-color: rgba(0,0,0,0.3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     padding: 0 10px;
-    transition: all 0.5s
+    transition: all 0.5s;
 }
 
 header * {
@@ -106,7 +108,7 @@ header * {
 .navBar:hover,
 header:active,
 header:hover {
-    transform: scale(1.005);
+    transform: scale(1.01);
     -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px);
 }
