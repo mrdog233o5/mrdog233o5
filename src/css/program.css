@@ -1,0 +1,38 @@
+body {overflow: hidden;}
+
+.wrapper {
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    background-color: #121212;
+    overflow: hidden;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.wrapper::-webkit-scrollbar {
+  display: none;
+}
+* {z-index: 1;}
+/* main info window ======================================= */
+.titlePage {
+    overflow: hidden;
+    display: flex;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    justify-items: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.titlePage .title {
+    width: 100%;
+    text-align: center;
+    color: #F4E8C1;
+    font-size: 7vw;
+}
+
