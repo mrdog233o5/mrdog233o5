@@ -4,7 +4,7 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "watch:css": "postcss ./src/css/* --dir dest -w"
+        "watch:css": "postcss ./src/* --dir dest -w"
     },
     "keywords": [],
     "author": "",
