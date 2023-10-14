@@ -4,7 +4,8 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "watch:css": "postcss ./src/* --dir dest -w"
+        "watch:css": "postcss src/css/* --dir dest/css -w",
+        "watch:js": "babel src/js/* --out-dir dest/js -w"
     },
     "keywords": [],
     "author": "",
@@ -13,5 +14,10 @@
         "cssnano": "^6.0.1",
         "postcss": "^8.4.31",
         "postcss-cli": "^10.1.0"
+    },
+    "dependencies": {
+        "@babel/cli": "^7.23.0",
+        "@babel/core": "^7.23.2",
+        "@babel/preset-env": "^7.23.2"
     }
 }

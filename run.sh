@@ -1,1 +1,9 @@
-npx serve & npm run watch:css
+#!/bin/bash
+
+run() {
+    npm run watch:css &
+    npm run watch:js &
+    npx serve
+}
+
+run
