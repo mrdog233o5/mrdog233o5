@@ -5,14 +5,17 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="mrdog233o5">
         <meta property="og:type" content="website">
-        <meta property="og:url" content="https://mrdog233o5.vercel.app/".
+        <meta property="og:url" content="https://mrdog233o5.vercel.app/">
         <meta property="og:title" content="mrdog233o5" >
         <meta property="og:description" content="mrdog233o5's personal website">
         <meta property="og:image" content="/images/milktea.jpg">
-        <link rel="stylesheet" href="/dest/css/style.css">
-        <link rel="stylesheet" href="/dest/css/index.css">
+        <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="/css/index.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
         <title>mrdog233o5</title>
+        <script defer src="/js/header.js"></script>
+        <script defer src="/js/tilt.js"></script>
+        <script defer src="/js/blob.js"></script>
     </head>
     <body>
         <!-- header -->
@@ -20,9 +23,8 @@
         <div class="wrapper">
             <!-- index page -->
             <section class="indexPage">
-                <img class="background">
                 <div class="window">
-                    <div class="windowWrap" data-tilt>
+                    <div class="windowWrap tilt">
                         <div class="text">
                             <h2>Hello! I am</h2>
                             <object class="br"></object>
@@ -33,54 +35,7 @@
                     </div>
                 </div>
             </section>
-
-            <section class="about" id="lastSection">
-                <div class="content">
-                    <h1 style="font-size: 90px; font-family: smooth;">About</h1>
-                    <br>
-                    <br>
-                    <p style="font-size: 5mm;">Hello, I am William Chen, I'm from Hong Kong. I'm currently studying in VSA, and I hope to become cybersecurity expert one day.</p>
-                </div>
-            </section>
-            <section class="menu">
-                <div class="content">
-                    <h1 style="font-size: 90px; font-family: smooth;">Menu</h1>
-                    <br>
-                    <br>
-                    <div class="menuFlex">
-                        <a class="programs" href="/pages/programs/" style="flex-grow: 1;">
-                            <img src="/images/programs.jpg" alt="bg" loading="lazy">
-                            <div class="text">
-                                <h2>Programs</h2>
-                                <p>All my programs</p>
-                            </div>
-                        </a>
-                        <a class="help" href="/pages/help.html">
-                            <img src="/images/help.jpg" alt="bg" loading="lazy">
-                            <div class="text">
-                                <h2>Help</h2>
-                                <p>Help U in programs</p>
-                            </div>
-                        </a>
-                        <a class="placeholder" href="/pages/placeholder.html">
-                            <img src="/images" alt="bg" loading="lazy">
-                            <div class="text">                            
-                                <h2>placeholder</h2>
-                                <p>holding place</p>
-                            </div>
-                        </a>
-                        <a class="contact" href="/pages/contact.html" style="flex-grow: 1;">
-                            <img src="/images/communicate.jpg" alt="bg" loading="lazy">
-                            <div class="text">
-                                <h2>Contact</h2>
-                                <p>Contact me here</p>
-                            </div>
-                        </a> 
-                    </div>
-                </div>
-            </section>
         </div>
-        <script src="/dest/js/header.js"></script>
-        <script src="/dest/js/vanilla-tilt.js"></script>
+        <div id="blob"></div>
     </body>
 </html>

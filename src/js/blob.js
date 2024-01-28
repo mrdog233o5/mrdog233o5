@@ -1,5 +1,4 @@
 /* -- Glow effect -- */
-
 const blob = document.getElementById("blob");
 
 window.onpointermove = event => { 
