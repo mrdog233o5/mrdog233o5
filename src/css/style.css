@@ -61,6 +61,7 @@ body {
     overflow: hidden;
     animation-name: load;
     animation-duration: 0.5s;
+    background: #1D2125;
 }
 
 /* topbar styles ========================================== */

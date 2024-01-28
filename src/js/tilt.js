@@ -25,31 +25,26 @@ window.onload = function() {
     // tile effect
 
     function tiltEffect() {
-        if (isMouseOver) {
-            const deltaScale = 18.0;
-            var transformPhrase = `translate(${ ( mouseX - centerX ) / deltaScale }px, ${ ( mouseY - centerY ) / deltaScale }px)`;
-            target.style.transform = transformPhrase; 
-            requestAnimationFrame(tiltEffect);
-        }
-    }
-
-    target.addEventListener("mouseenter", () => {
+        const deltaScale = 50.0;
         isMouseOver = true;
         var rect = target.getBoundingClientRect();
         centerX = rect.left + rect.width / 2;
         centerY = rect.top + rect.height / 2;
+        target.style.transform = `translate(${ ( mouseX - centerX ) / deltaScale }px, ${ ( mouseY - centerY ) / deltaScale }px)`;
         requestAnimationFrame(tiltEffect);
-    });
+    }
 
     target.addEventListener("mouseleave", () => {
         isMouseOver = false;
-        resetStyle();
+        target.style.transform = "";
     });
 
     document.addEventListener("mousemove", function(event) {
         mouseX = event.clientX;
         mouseY = event.clientY;
     });
+
+    requestAnimationFrame(tiltEffect);
 
 };
 
