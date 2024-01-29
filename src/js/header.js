@@ -1,20 +1,16 @@
-let header = document.querySelector('[header]');
+let header = document.querySelector('header');
 let newElement = document.createElement('div');
 let page = header.getAttribute('page');
 
 console.log(page);
 newElement.innerHTML = `
-    <header id="navBarHeader">
-        <nav class="navBar">
-            <div class="left">
-                <a href="/" id="btnHome">home</a>
-            </div>
-            <div class="right">
-                <a href="/pages/contact.html" id="btnContact">contact</a>
-                <a href="/pages/programs/" id="btnPrograms">programs</a>
-            </div>
-        </nav> 
-    </header>
+<div class="space"></div>
+<div class="navBarContainer">
+    <div class="navBar">
+        <div class="url"><a href="/" id="btnHome"><div class="center"><h3>about</h3></div></a></div>
+        <div class="url"><a href="/pages/programs/" id="btnPrograms"><div class="center"><h3>repos</h3></div></a></div>
+    </div>
+</div>
 `;
 
 header.appendChild(newElement);

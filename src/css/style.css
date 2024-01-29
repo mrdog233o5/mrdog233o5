@@ -18,9 +18,15 @@
     font-family: big;
     src: url(/fonts/Big500-8MLOM.ttf);
 }
+
 @font-face {
     font-family: ph;
     src: url(/fonts/ORIOND.ttf);
+}
+
+@font-face {
+    font-family: singleDay;
+    src: url(/fonts/SingleDay-Regular.ttf);
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&display=swap');
@@ -70,75 +76,56 @@ header {
     position:fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 3em;
-    justify-content: space-between;
-    align-items:center;
-    background: color(0, 0, 0, .1);
     z-index: 1000;
-    background-color: rgba(0,0,0,0.3);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    padding: 0 10px;
-    transition: all 0.5s;
 }
 
-header * {
-    transition: all 0.5s;
+header .space {
+    height: 20px;
+}
+
+.navBarContainer {
+    position: relative;
+    display: flex;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+}
+
+.navBar {
+    position: relative;
+    display: flex;
+    border-radius: 100em;
+    overflow: hidden;
+    gap: 5px;
+}
+
+.navBar .url {
+    background: rgba(16, 18, 20, 0.6);
+    height: 50px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: width 0.5s;
+}
+
+.navBar .url:hover {
+    width: 170px;
 }
 
 .navBar a {
-    position: relative;
-    height: 100%;
     font-size: 5mm;
     text-transform: capitalize;
     text-align: center;
     text-decoration: none;
-    margin-left: 5mm;
-    margin-right: 5mm;
-    padding-top: 3mm;
-    padding-bottom: 3mm;
     color: #F4E8C1;
-}
-
-.navBar:active,
-.navBar:hover,
-header:active,
-header:hover {
-    transform: scale(1.01);
-    backdrop-filter: blur(5px);
-}
-
-.navBar .left a {float: left;}
-.navBar .right a {float: right;}
-
-.navBar a::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
+    height: 100%;
     width: 100%;
-    height: 1mm;
-    background: #F4E8C1;
-    border-radius: 1mm;
-    transform: scaleX(0);
 }
 
-.navBar a:hover::after {
-    transform: scaleX(1);
-}
-
-
-.navBar a.active::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
+.navBar a .center {
     width: 100%;
-    height: 1mm;
-    background: #F4E8C1;
-    border-radius: 1mm;
-    transform: scaleX(1);
+    height: 100%;
 }
 
 /* other ================================================== */
@@ -154,7 +141,11 @@ section {
     position: relative;
 }
 
-
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 /* blobs ========================================================== */
 
