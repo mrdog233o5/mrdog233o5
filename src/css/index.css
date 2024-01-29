@@ -44,13 +44,12 @@
     border-radius: 20px;
     -webkit-backdrop-filter: blur(1000px);
     backdrop-filter: blur(1000px);
-    box-shadow: 0 0 50px rgba(89, 103, 115, .3);
+    box-shadow: 0 0 50px rgba(89, 103, 115, .4);
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     transition: scale 0.5s;
-    background: rgba(16, 18, 20, .7);
 }
 
 .window:hover .windowWrap {
