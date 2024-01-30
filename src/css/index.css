@@ -43,7 +43,7 @@
     height: 100%;
     border-radius: 20px;
     backdrop-filter: blur(1000px);
-    -webkit-backdrop-filter: blur(500px);
+    -webkit-backdrop-filter: blur(300px);
     box-shadow: 0 0 50px rgba(89, 103, 115, .4);
     display: flex;
     justify-content: center;
